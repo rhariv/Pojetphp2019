@@ -1,0 +1,85 @@
+h1
+{
+	text-align: center;
+	color: green;
+	margin-top: 10px;
+}
+h2{
+	text-align: center;
+	color: grey;
+}
+select{
+	width: 150px;
+	padding: 10px;
+	margin-top: 50px;
+
+}
+input[type=reset]{
+	width:150px;
+	padding: 10px;
+	float: center;
+}
+input[type=text]{
+	width: 250px;
+	padding: 10px;
+	float: auto;
+	margin-top: 20px;
+
+}
+button{
+	width: 150px;
+	padding: 10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+input[type=submit]{
+	width: 150px;
+	padding: 10px;
+	float: right;
+	margin-right: 20px;
+	margin-right: 50px;
+	margin-top: 20px;
+	-moz-border-radius:10px;
+	-webkit-border-radius: 10px;
+
+}
+a:link {
+    color:#EDEEEE;
+	text-decoration:none;
+}
+a:visited {
+    color:#EDEEEE;
+	text-decoration:none;
+}
+a:hover {
+    color:#EDEEEE;
+	text-decoration:none;
+}
+a:active {
+    color:#EDEEEE;
+	text-decoration:none;
+}
+#en-tete
+{
+	width: 100%;
+	background-color:lightgrey;
+	text-align:center;
+	height:60px;
+	margin:auto;
+}
+#contenu
+{
+	margin:auto;
+	width:100%;
+	height:650px;
+	background-color:burlywood;
+	text-align:center;
+}
+#pied-page
+{
+	width:100%;
+	height:50px;
+	background-color:lightgrey;
+	text-align:center; 
+
+}

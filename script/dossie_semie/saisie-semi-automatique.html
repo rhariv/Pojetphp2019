@@ -1,0 +1,94 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Saisie semi-automatique en Javascript</title>
+<meta name="description" content="Suggestions intuitives au cours de la frappe de l'utilisateur dans la moteur de recherche" />
+<meta name="robots" content="index,follow" />
+<meta http-equiv="content-language" content="fr" />
+<link href='styles/mef.css' rel='stylesheet' type='text/css' />
+<script language="Javascript" src="js/mem_cherche.js"></script>
+</head>
+<body>
+
+	<div class="div_conteneur_parent">
+	<div id="infos" class="texte_div"></div>
+		<div class="div_conteneur_page">
+			<a href="http://www.bonbache.fr/" target="_self">
+			<img src="images/le_formateur.png" style="width:50px;border:none;" align="left" alt="formateur informatique" />
+			</a>		
+			<div class="titre_page"><h1>Saisie semi-automatique en Javascript</h1></div>
+			
+			<div class="div_int_page">
+			
+			<div style="width:100%;display:block;text-align:center;">
+			</div>
+			
+			<div class="div_saut_ligne" style="height:30px;">
+			</div>						
+			
+			<div style="float:left;width:10%;height:40px;"></div>
+			<div style="float:left;width:80%;height:40px;text-align:center;">
+			<div style="width:auto;display:block;height:auto;text-align:center;background-color:#ccccff;border:#7030a0 1px solid;padding-top:12px;box-shadow: 6px 6px 0px #aaa;color:#7030a0;">
+			<h1>Suggestions intuitives pour la saisie semi-automatique</h1>
+			</div>
+			</div>
+					
+			<div style="float:left;width:10%;height:40px;"></div>
+			
+			<div class="div_saut_ligne">
+			</div>		
+			
+			<div style="width:100%;height:auto;text-align:center;">
+						
+			<div style="width:800px;display:inline-block;" id="conteneur">
+			
+				<div class="centre">
+					<div class="titre_centre" id="titre" style="text-align:left;padding-left:10px;">
+					<!--onkeyup plutôt que onkeypress pour que le caractère soit inscrit au moment de la transaction-->
+						<input type="text" value="Veuillez saisir les mots clés de recherche" id="moteur" onclick="init_saisie('1')" onmouseout="init_saisie('2')" />
+						<input type="button" value="Ok" id="valider" onclick="valider()" /><br />
+						<div id="prop">texte<br />texte<br />texte</div>
+					</div>	
+				</div>
+			
+				<div class="colonne" id="liste" w3-include-html="absolues-excel.html">
+					<iframe id="cadre" src="cache/absolues-excel.html" frameBorder="0" scrolling="no"></iframe>
+				</div>
+				
+				<div class="centre">
+					<div class="titre_centre" id="apercu">
+					
+					</div>	
+				</div>					
+				
+			</div>
+			
+			</div>
+
+			<div class="div_saut_ligne" style="height:50px;">
+			</div>	
+			
+			</div>
+		</div>
+	
+	</div>
+	
+</body>
+<script type="text/javascript" language="javascript">
+
+	function init_saisie(mode)
+	{
+		if(mode == "1" && document.getElementById("moteur").value == "Veuillez saisir les mots clés de recherche")
+			document.getElementById("moteur").value = "";
+		else if(document.getElementById("moteur").value == "")
+			document.getElementById("moteur").value = "Veuillez saisir les mots clés de recherche";
+	}
+	
+	function valider()
+	{
+	
+	}
+	
+</script>
+</html>
+	

@@ -1,0 +1,25 @@
+#corpsPage
+{
+	width: 100%;
+	background-color: white; 
+}
+#entête
+{
+	width: 100%;
+	height: 200px;
+}
+#menuRecherche{
+	background-color:green;
+	float: left;
+	width: 400px;
+}
+#resultatRecherche{
+	background-color:ivory;
+	float: right;
+	width: 600px;
+}
+#piedpage{
+	width: 100%;
+	height: 250px;
+	background-color: grey;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<script language="Javascript" src="liste.js"></script>
+
+</head>
+<body>
+	<div>
+	<input type="text" value="Veuillez saisir les mots" id ="moteur" onkeyup="controle_saisie()" onclick="init_saisie('1')" onmouseout="init_saisie('2')" />
+	<input type="button" name="" value="ok" id="valider" onclick="valider()" />
+	</div>
+	<div id="prop"> texte <br />texte <br />texte  </div>
+	<div>
+		<!--iframe id="resultat" src="resultat.php"></iframe-->
+	</div>
+</body>
+<script type="text/javascript" language="Javascript">
+	function init_saisie(mode)
+	{
+		if(mode == "1" && document.getElementById("moteur").value == "Veuillez saisir les mots clés de recherche")
+			document.getElementById("moteur").value = "";
+		else if(document.getElementById("moteur").value == "")
+			document.getElementById("moteur").value = "Veuillez saisir les mots clés de recherche";
+	}
+	function controle_saisie()
+	{
+		var nbMots = "";
+		var  chaine_tab;
+		var nbCar;
+		var saisie ="";
+		var res=false;
+		var chaine = mots_cles();
+		//alert(chaine);
+		document.getElementById("prop").innerHTML ="";
+		chaine_tab =chaine.split('|');
+		nbMots = chaine_tab.length;
+		//alert(nbMots);
+		saisie = document.getElementById("moteur").value;
+		nbCar =saisie.length;
+		//alert(nbCar);
+		if(nbCar > 0)
+		{
+			for( var rangee = 1; rangee < nbMots; rangee++)
+			{
+				if(chaine_tab[rangee].length > nbCar - 1)
+				{
+					if(saisie == chaine_tab[rangee].substr(0, nbCar))
+					{
+						if(res == false)
+							res = true;
+						document.getElementById("prop").style.visibility = "visible"
+					}
+					//document.getElementById("prop").innerHTML +="<br />";
+					document.getElementById("prop").innerHTML += " <div class = 'flux' onClick = 'choix(\"" + chaine_tab[rangee] + "\")'>" + chaine_tab[rangee] + "</div>";
+				}
+			}
+		}
+
+	}
+	function choix(valeur)
+	{
+		document.getElementById("moteur").value = valeur ;
+		document.getElementById("prop").style.visibility = "hidden";
+		resultats();
+	}
+	function resultats()
+	{
+		//document.getElementById("resultat").src = "resultat/" + document.getElementById("moteur").value.replace(/ /g, "-")+ ".php";
+	}
+</script>
+</html>

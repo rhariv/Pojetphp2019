@@ -1,0 +1,121 @@
+#conteneur_parent,#entete;
+p{
+	margin-top: 0px;
+}
+fieldset{
+	margin-bottom: 15px;
+	padding: 10px;
+	width: 50%;
+
+}
+legend{
+	padding: 0px 3px;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+label{
+	width: 50px;
+	margin-top: 55px;
+	
+
+}
+input[type=submit]{
+	width: 150px;
+	padding: 10px;
+	float: right;
+	margin-right: 20px;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+input[type=reset]{
+	width:150px;
+	padding: 10px;
+	float: center;
+}
+input[type=text]{
+	width: 300px;
+	padding: 10px;
+	float: auto;
+	margin-left: 500px;
+	margin-top: 20px;
+}
+select{
+	width: 200px;
+	padding: 10px;
+	float: auto;
+	margin-top: 50px;
+
+}
+h1{
+	color: green;
+	
+}
+body{
+	margin-right: 0;
+	margin-left: 30%;
+	background-color: silver;
+
+
+}
+footer{
+	display: table-row;
+	height: 100px;
+	text-align:left;
+}
+button{
+	width: 150px;
+	padding: 10px;
+}
+#conteneur_parent
+{
+	width: 100%;
+	height: auto;
+	background-color: palegreen;
+	float: left;
+}
+#entete
+{
+	text-align: center;
+	width: 60%;
+	padding: 10px;
+	background-color: powderblue;
+	margin-left: 20%;
+}
+#contenu
+{
+	width: 99%;
+	height: auto;
+}
+#partie_haut
+{
+	text-align: center;
+	width: 60%;
+	float: left;
+	padding-left: 2px;
+}
+#gauche
+{
+	float: left;
+	width: 40%;
+}
+#centre
+{
+	float: right;
+	width: 60%;
+}
+#pied_page
+{
+	text-align: center;
+	margin-top: 50%;
+}
+#milieu_gauche
+{
+	float: left;
+	margin-top: auto;
+}
+#milieu_droite
+{
+	float: right;
+	margin-top: auto;
+
+}
